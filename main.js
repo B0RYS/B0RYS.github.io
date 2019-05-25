@@ -12,7 +12,7 @@ while (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator
 function aboutme() {
     containers.innerHTML = "<div class='container'>\
     <h1 class='title'>About me</h1>\
-    <div class='content'>I aim to develop technology that is usable for anyone. I'm 15 years\
+    <div class='content'>I aim to develop technology that is usable by anyone. I'm 15 years\
         old and come from Poland, though i have lived in England for some time. </div>\
     </div>"
 };
