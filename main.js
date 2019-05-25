@@ -1,4 +1,8 @@
 const containers = document.getElementById("containers");
+window.projectList = [
+    {name: "borysdev.github.io", description: "A website that introduces me and my projects.", link: "https://borysdev.github.io"},
+    {}
+];
 
 while (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     alert("Please view this webpage on a desktop device");
@@ -15,11 +19,16 @@ function aboutme() {
 };
 
 function projects() {
-    containers.innerHTML = "<div class='container'>\
-    <h1 class='title'>Coming soon...</h1>\
-    <div class='content'>I have a lot of ideas, yet not enough time to implement them. However this section will\
-        expand as new projects arise.</div>\
-    </div>"
+    containers.innerHTML = "";
+
+    window.projectList.forEach(project => {
+        if(!project.name || !project.description)return;
+        containers.innerHTML += `<div class ='container'>\
+        <h1 class='title'><a href='${project.link || ""}'>${project.name}</a></h1>
+        <div class='content'>${project.description}</div>
+        </div>`
+    });
 };
+
 
 window.onload = aboutme();
