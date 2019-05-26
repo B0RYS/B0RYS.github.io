@@ -1,7 +1,7 @@
 const containers = document.getElementById("containers");
 window.projectList = [
     {name: "borysdev.github.io", description: "A website that introduces me and my projects.", link: "https://borysdev.github.io"},
-    {}
+    {name: "MultiOgar-Edited", description: "An Open Source server implementation for the game Agar.io", link: "https://github.com/MegaByte918/MultiOgar-Edited"}
 ];
 
 while (/Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -23,7 +23,7 @@ function projects() {
     window.projectList.forEach(project => {
         if(!project.name || !project.description)return;
         containers.innerHTML += `<div class ='container'>\
-        <h1 class='title'><a href='${project.link || ""}'>${project.name}</a></h1>
+        <h1 class='title'><a href='${project.link || ""}' target='_blank'>${project.name}</a></h1>
         <div class='content'>${project.description}</div>
         </div>`
     });
