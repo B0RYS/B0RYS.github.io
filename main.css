@@ -79,9 +79,10 @@ a {
 
 /* Bottom text epic meme */
 .bottom-text {
-    margin: 20px;
+    margin: 10px;
     font-size: 15px;
 
+    position: fixed;
     left: 0;
     bottom: 0;
 }
