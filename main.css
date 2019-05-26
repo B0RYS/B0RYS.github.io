@@ -8,10 +8,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
     /* Background */
-    background-color: #ffffff;
-    background-image: url(./images/mountain.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #dddddd;
 }
 
 /* Custom hyperlinks */
@@ -80,12 +77,12 @@ a {
     color: black;
 }
 
-/* Image credit */
-.credit {
+/* Bottom text epic meme */
+.bottom-text {
     margin: 20px;
     font-size: 15px;
 
     position: fixed;
     left: 0;
     bottom: 0;
-};
+}
